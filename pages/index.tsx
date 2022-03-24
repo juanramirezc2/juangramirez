@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from 'next/link'
 import Head from "next/head";
 import ReactFullpage from "@fullpage/react-fullpage";
 //import styles from "../styles/Home.module.css";
@@ -198,6 +199,54 @@ const fullpages = [
     anchor: "blog",
   },
 ];
+const Header = ({fullpages}) => {
+  return (
+    <header className="header">
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          justifyContent: `space-between`,
+          display: `flex`,
+          alignItems: `center`,
+        }}
+      >
+        <h1 style={{ margin: 0 }}>
+          <Link
+            href="/"
+            style={{
+              color: `#6699CC`,
+              textDecoration: `none`,
+            }}
+          >
+            <FontAwesomeIcon style={{width:'40px',color:'white'}} icon="code" />
+          </Link>
+        </h1>
+        <ul
+          style={{
+            display: `flex`,
+            margin: 0,
+            listStyle: `none`,
+          }}
+          tw="flex list-none"
+          className="main-menu"
+        >
+          {fullpages.map(({ text }, sectionIndex) => {
+            return (
+              <li key={text}>
+                <a href="#"  onClick={(e)=>{ e.preventDefault();
+                  window.fullpage_api.moveTo(sectionIndex+1);
+                }}>
+                  {text}
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </header>
+  )
+} ;
 
 function About() {
   return (
@@ -307,6 +356,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+        <Header fullpages={fullpages} />
         <ReactFullpage
           navigation
           anchors={fullpages.map((page) => page.anchor)}

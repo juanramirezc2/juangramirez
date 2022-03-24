@@ -104,3 +104,17 @@ body{
     width: 70vw;
   }
 }
+.main-menu {
+  color: white;
+}
+.main-menu li {
+  padding: 0 10px;
+}
+.main-menu li button {
+  color: #6699cc;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
