@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: arial;
+}
+.custom-section{
+    text-align: center;
+    color: #fff;
+}
+
+.actions{
+    list-style-type: none;
+}
+.actions button{
+    padding: .93em 1.87em;
+    background: #35495e;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    margin: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.actions button:hover{
+    background: #fff;
+    color: #35495e;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background: #fff;
+    color: #35495e;
+}
+.navbar a.active {
+   border-bottom: 2px solid #fff;
+}
+.hero__iner .fa-angle-double-down {
+  width: 30px;
+  color: white;
+}
+
+.hero__iner .fa-envelope {
+  width: 20px;
+}
+
+.hero__iner .social-links {
+  display: flex;
+  gap: 7px;
+}
+.hero__iner .social-links a {
+  display: block;
+}
+
+.hero__iner .social-links svg {
+  width: 20px;
+  height: 20px;
+}
+.profile {
+  display: none;
+}
+.hero__iner__text {
+  backdrop-filter: blur(2px);
+  border-radius: 5%;
+  width: 90vw;
+}
+.hero__iner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.header {
+  display: none;
+}
+@media (min-width: 801px) {
+  .header {
+    backdrop-filter: blur(3px);
+    padding: 1rem 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: block;
+  }
+  .profile {
+    display: block;
+  }
+  .hero__iner__text {
+    width: 70vw;
+  }
+}
