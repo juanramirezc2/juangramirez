@@ -1,6 +1,6 @@
 // page/_app.js
 import '../styles/globals.css'
-import "tailwindcss/tailwind.css";
+import 'tailwindcss/tailwind.css'
 import { GlobalStyles } from 'twin.macro'
 import type { AppProps } from 'next/app'
 
