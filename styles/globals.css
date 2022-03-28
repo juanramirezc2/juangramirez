@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 #particles {
-  position: fixed;
+  position: absolute;
   width: 0;
   height: 0;
   overflow: visible;
-  z-index: 2;
+  z-index: 1;
 }
 body{
     font-family: arial;
