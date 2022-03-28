@@ -505,7 +505,7 @@ function About() {
         <ul className="social-links" tw="m-0 list-none">
           {social.map((el, index) => (
             <li key={index}>
-              <a href={el.url}>
+              <a href={el.url} target="_blank">
                 <FontAwesomeIcon icon={['fab', el.icon as IconName]} />
               </a>
             </li>
