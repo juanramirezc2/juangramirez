@@ -458,7 +458,7 @@ function Skill() {
             </div>
           ))}
         </div>
-        <div tw="text-center">
+        <div tw="text-center hidden md:block">
           <FontAwesomeIcon icon="angle-double-down" />
         </div>
       </Layout>
@@ -548,7 +548,7 @@ function About() {
             </a>
           </div>
         </SoftAppear>
-        <div tw="text-center">
+        <div tw="text-center hidden md:block">
           <FontAwesomeIcon icon="angle-double-down" />
         </div>
       </Layout>
@@ -564,7 +564,7 @@ function Blog() {
           Blog
         </h1>
 
-        <div tw="text-center">
+        <div tw="text-center hidden md:block">
           <FontAwesomeIcon icon="angle-double-down" />
         </div>
       </Layout>
