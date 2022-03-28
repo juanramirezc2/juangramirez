@@ -90,7 +90,9 @@ const CustomParticles = () => (
   <Particles
     id={`${Math.random().toString(16).slice(2)}`}
     options={{
-      fpsLimit: 60,
+      fullScreen: true,
+      fpsLimit: 24,
+      detectRetina: true,
       particles: {
         color: {
           value: '#ffffff',
@@ -116,9 +118,9 @@ const CustomParticles = () => (
         number: {
           density: {
             enable: true,
-            value_area: 800,
+            value_area: 1000,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,
