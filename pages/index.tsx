@@ -410,20 +410,21 @@ function Skill() {
   return (
     <>
       <Layout background={'linear-gradient(to right, #005AF5, #0081FF)'}>
+        <h2 style={{ fontWeight: 'bold', fontSize: '30px' }}>Skills</h2>
         <div
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(4, 1fr)',
-            gridTemplateRows: 'repeat(3, 1fr)',
+            gridTemplateRows: 'repeat(2, 1fr)',
             width: '100%',
             columnGap: '10px',
             rowGap: '10px',
-            height: '80vh',
+            height: '75vh',
             gridAutoRows: '1fr',
           }}
         >
-          {skills.map((skill) => (
-            <div>
+          {skills.map((skill, index) => (
+            <div key={index}>
               {skill.name}
               {skill.icon}
               {skill.expertise}
@@ -513,7 +514,7 @@ function About() {
               button! 😃
             </p>
             <a
-              tw="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded inline-flex items-center no-underline"
+              tw="mt-5 bg-bottom hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded inline-flex items-center no-underline"
               href="mailto:contact@juangabriel.dev"
             >
               <FontAwesomeIcon tw="mr-2" icon="envelope" />

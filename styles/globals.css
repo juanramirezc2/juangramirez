@@ -74,11 +74,10 @@ body{
   display: none;
 }
 .hero__iner__text {
-  backdrop-filter: blur(2px);
-  border-radius: 5%;
   width: 90vw;
 }
 .hero__iner {
+  z-index: 100000;
   position: absolute;
   top: 50%;
   left: 50%;
