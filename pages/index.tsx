@@ -494,9 +494,13 @@ function About() {
       <Layout background={'linear-gradient(to right, #4b15c1, #005AF5)'}>
         <h1 className="animate" style={{ color: `#5FB3B3`, fontSize: `21px` }}>
           Juan Gabriel Ramirez
-          <br />
-          <sub>Senior FrontEnd Developer</sub>
         </h1>
+        <sub
+          style={{ color: `#5FB3B3`, fontWeight: 500, fontSize: '13px' }}
+          tw="block mb-5"
+        >
+          Senior FrontEnd Developer
+        </sub>
         <Avatar />
         <ul className="social-links" tw="m-0 list-none">
           {social.map((el, index) => (
