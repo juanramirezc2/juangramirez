@@ -41,12 +41,12 @@ const social = [
   {
     platform: `github`,
     icon: `github`,
-    url: `https://github.com/JG-Ramirez`,
+    url: `https://github.com/juanramirezc2`,
   },
   {
     platform: `twitter`,
     icon: `twitter`,
-    url: `https://twitter.com/JG_Ramirez_`,
+    url: `https://twitter.com/juanramirezc2`,
   },
   {
     platform: `codepen`,
@@ -66,7 +66,7 @@ const social = [
   {
     platform: `stack overflow`,
     icon: `stack-overflow`,
-    url: `https://es.stackoverflow.com/users/18928/juan-gabriel-ramirez`,
+    url: `https://stackoverflow.com/users/2525259/juan-gabriel-ramirez?tab=profile`,
   },
   {
     platform: `npm`,
