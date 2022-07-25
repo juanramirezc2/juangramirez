@@ -14,7 +14,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import Particles from 'react-tsparticles'
 import 'twin.macro'
 import { motion } from 'framer-motion'
-import { abort } from 'process'
 
 library.add(fab, faCode, faEnvelope, faAngleDoubleDown)
 
@@ -201,7 +200,7 @@ const Avatar = () => {
     >
       <div className="profile">
         <img
-          src="https://avatars.githubusercontent.com/u/4117152"
+          src="https://github.com/juanramirezc2.png"
           alt="profile"
           tw="rounded-full w-full object-cover"
         />
@@ -492,7 +491,7 @@ function About() {
   return (
     <>
       <Layout background={'linear-gradient(to right, #4b15c1, #005AF5)'}>
-        <h1 className="animate" style={{ color: `#5FB3B3`, fontSize: `21px` }}>
+        <h1 className="animate" style={{ color: `#5FB3B3`, fontSize: `30px` }}>
           Juan Gabriel Ramirez
         </h1>
         <sub
@@ -506,7 +505,10 @@ function About() {
           {social.map((el, index) => (
             <li key={index}>
               <a href={el.url} target="_blank">
-                <FontAwesomeIcon icon={['fab', el.icon as IconName]} />
+                <FontAwesomeIcon
+                  fontSize={23}
+                  icon={['fab', el.icon as IconName]}
+                />
               </a>
             </li>
           ))}
@@ -545,7 +547,7 @@ function About() {
             </p>
             <a
               tw="mt-5 bg-bottom hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded inline-flex items-center no-underline"
-              href="mailto:contact@juangabriel.dev"
+              href="mailto:me@juangabriel.dev"
             >
               <FontAwesomeIcon tw="mr-2" icon="envelope" />
               Get in touch

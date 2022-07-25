@@ -9,52 +9,52 @@
   overflow: visible;
   z-index: 1;
 }
-body{
-    font-family: arial;
+body {
+  font-family: arial;
 }
-.custom-section{
-    text-align: center;
-    color: #fff;
+.custom-section {
+  text-align: center;
+  color: #fff;
 }
 
-.actions{
-    list-style-type: none;
+.actions {
+  list-style-type: none;
 }
-.actions button{
-    padding: .93em 1.87em;
-    background: #35495e;
-    border-radius: 5px;
-    border: 0;
-    color: #fff;
-    margin: 7px;
-    font-size: 15px;
-    cursor: pointer;
+.actions button {
+  padding: 0.93em 1.87em;
+  background: #35495e;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  margin: 7px;
+  font-size: 15px;
+  cursor: pointer;
 }
-.actions button:hover{
-    background: #fff;
-    color: #35495e;
+.actions button:hover {
+  background: #fff;
+  color: #35495e;
 }
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px;
-    display: block;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  transition: 0.3s;
 }
 .navbar a:hover {
-    background: #fff;
-    color: #35495e;
+  background: #fff;
+  color: #35495e;
 }
 .navbar a.active {
-   border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .hero__iner .fa-angle-double-down {
   width: 30px;
@@ -74,8 +74,8 @@ body{
 }
 
 .hero__iner .social-links svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .profile {
   display: none;
