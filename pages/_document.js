@@ -27,6 +27,14 @@ export default class MyDocument extends Document {
             data-emotion-css={this.props.ids?.join(' ')}
             dangerouslySetInnerHTML={{ __html: this.props.css }}
           />
+          <meta
+            property="og:title"
+            content="Juan Ramirez Frontend Engineering Lead"
+          />
+          <meta
+            property="og:image"
+            content="https://www.juangabriel.dev/thumbnail.png"
+          />
         </Head>
         <body>
           <Main />
