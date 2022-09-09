@@ -89,7 +89,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  backdrop-filter: brightness(0.8);
+  border-radius: 7px;
   z-index: 100;
+  padding: 30px;
 }
 .header {
   display: none;
@@ -123,4 +126,17 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  column-gap: 20px;
+  row-gap: 40px;
+
+  @media (min-width: 801px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }

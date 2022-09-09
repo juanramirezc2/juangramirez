@@ -433,35 +433,56 @@ const skills = [
 ]
 function Skill() {
   return (
-    <>
+    <div>
       <Layout background={'linear-gradient(to right, #005AF5, #0081FF)'}>
         <h2 style={{ fontWeight: 'bold', fontSize: '30px' }}>Skills</h2>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gridTemplateRows: 'repeat(2, 1fr)',
-            width: '100%',
-            columnGap: '10px',
-            rowGap: '10px',
-            height: '75vh',
-            gridAutoRows: '1fr',
-          }}
-        >
+        <div className="skills-container">
           {skills.map((skill, index) => (
             <div key={index}>
-              {skill.name}
-              {skill.icon}
-              {skill.expertise}
+              <div
+                style={{
+                  textAlign: 'left',
+                  fontWeight: 600,
+                  fontSize: '16px',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '8px',
+                  marginBottom: '10px',
+                }}
+              >
+                <div
+                  tw="hidden md:inline-block"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    margin: 'auto 0',
+                  }}
+                >
+                  {skill.icon}
+                </div>
+                <div>
+                  <div>{skill.name}</div>
+                  <div>{skill.expertise}</div>
+                </div>
+              </div>
               <ProgressBar progress={skill.score} />
             </div>
           ))}
         </div>
-        <div tw="text-center hidden md:block">
-          <FontAwesomeIcon icon="angle-double-down" />
-        </div>
       </Layout>
-    </>
+      <div
+        style={{
+          width: '25px',
+          height: '31px',
+          bottom: '10px',
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%)',
+        }}
+      >
+        <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
+      </div>
+    </div>
   )
 }
 function ProgressBar(props: { progress: number }) {
@@ -489,7 +510,7 @@ function ProgressBar(props: { progress: number }) {
 
 function About() {
   return (
-    <>
+    <div>
       <Layout background={'linear-gradient(to right, #4b15c1, #005AF5)'}>
         <h1 className="animate" style={{ color: `#5FB3B3`, fontSize: `30px` }}>
           Juan Gabriel Ramirez
@@ -501,7 +522,7 @@ function About() {
           Senior FrontEnd Developer
         </sub>
         <Avatar />
-        <ul className="social-links" tw="m-0 list-none">
+        <ul className="social-links" tw="m-2 list-none">
           {social.map((el, index) => (
             <li key={index}>
               <a href={el.url} target="_blank">
@@ -516,7 +537,6 @@ function About() {
         <SoftAppear>
           <div
             style={{
-              padding: `3rem 1.0875rem`,
               color: `white`,
             }}
           >
@@ -535,6 +555,7 @@ function About() {
             <p>
               In{' '}
               <a
+                style={{ textDecoration: 'underline' }}
                 target="_blank"
                 rel="noreferrer"
                 href="https://drive.google.com/file/d/1SL49RLzpiHvgkFg-k9lFFDR381XfBMbc/view?usp=sharing"
@@ -554,27 +575,44 @@ function About() {
             </a>
           </div>
         </SoftAppear>
-        <div tw="text-center hidden md:block">
-          <FontAwesomeIcon icon="angle-double-down" />
-        </div>
       </Layout>
-    </>
+      <div
+        style={{
+          width: '25px',
+          height: '31px',
+          bottom: '10px',
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%)',
+        }}
+      >
+        <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
+      </div>
+    </div>
   )
 }
 
 function Blog() {
   return (
-    <>
+    <div>
       <Layout background={'linear-gradient(to right, #009FFB, #00B8D8)'}>
         <h1 className="animate" style={{ color: `#5FB3B3`, fontSize: `21px` }}>
           Blog
         </h1>
-
-        <div tw="text-center hidden md:block">
-          <FontAwesomeIcon icon="angle-double-down" />
-        </div>
       </Layout>
-    </>
+      <div
+        style={{
+          width: '25px',
+          height: '31px',
+          bottom: '10px',
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%)',
+        }}
+      >
+        <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
+      </div>
+    </div>
   )
 }
 const Home: NextPage = () => {
