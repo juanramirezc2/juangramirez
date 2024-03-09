@@ -92,9 +92,8 @@ body {
   border-radius: 7px;
   z-index: 100;
   padding: 30px;
-  font-weight: 500;
   font-family: monospace;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header {
   display: none;
@@ -110,6 +109,10 @@ body {
   }
   .profile {
     display: block;
+  }
+  .hero__iner {
+    font-weight: 500;
+    font-size: 20px;
   }
   .hero__iner__text {
     width: 70vw;
