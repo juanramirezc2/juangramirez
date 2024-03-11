@@ -555,7 +555,7 @@ function About() {
             <p>
               In{' '}
               <a
-                style={{ textDecoration: 'underline' }}
+                style={{ textDecoration: 'underline', cursor: 'pointer' }}
                 target="noopener noreferrer"
                 rel="noreferrer"
                 href="/Resume-Juan-Ramirez.pdf"
