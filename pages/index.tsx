@@ -556,9 +556,9 @@ function About() {
               In{' '}
               <a
                 style={{ textDecoration: 'underline' }}
-                target="_blank"
+                target="noopener noreferrer"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1SL49RLzpiHvgkFg-k9lFFDR381XfBMbc/view?usp=sharing"
+                href="/Resume-Juan-Ramirez.pdf"
               >
                 my resume
               </a>{' '}
