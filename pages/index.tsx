@@ -541,7 +541,7 @@ function About() {
             }}
           >
             <p>
-              With over 10+ years of experience in the web development world, my
+              With over 13+ years of experience in the web development world, my
               biggest goal is to help companies by bringing simple solutions to
               complex problems.
             </p>
