@@ -470,16 +470,7 @@ function Skill() {
           ))}
         </div>
       </Layout>
-      <div
-        style={{
-          width: '25px',
-          height: '31px',
-          bottom: '10px',
-          position: 'absolute',
-          left: '50%',
-          transform: 'translateX(-50%)',
-        }}
-      >
+      <div className="down-arrow">
         <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
       </div>
     </div>
@@ -576,16 +567,7 @@ function About() {
           </div>
         </SoftAppear>
       </Layout>
-      <div
-        style={{
-          width: '25px',
-          height: '31px',
-          bottom: '10px',
-          position: 'absolute',
-          left: '50%',
-          transform: 'translateX(-50%)',
-        }}
-      >
+      <div className="down-arrow">
         <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
       </div>
     </div>
@@ -600,16 +582,7 @@ function Blog() {
           Blog
         </h1>
       </Layout>
-      <div
-        style={{
-          width: '25px',
-          height: '31px',
-          bottom: '10px',
-          position: 'absolute',
-          left: '50%',
-          transform: 'translateX(-50%)',
-        }}
-      >
+      <div className="down-arrow">
         <FontAwesomeIcon width={25} icon="angle-double-down" bounce />
       </div>
     </div>

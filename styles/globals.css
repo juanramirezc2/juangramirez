@@ -145,3 +145,11 @@ button {
     grid-template-rows: repeat(2, 1fr);
   }
 }
+.down-arrow {
+  width: 25px;
+  height: 31px;
+  bottom: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
