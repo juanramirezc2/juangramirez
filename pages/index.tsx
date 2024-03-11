@@ -600,6 +600,11 @@ const Home: NextPage = () => {
       <main>
         <Header fullpages={fullpages} />
         <ReactFullpage
+          credits={{
+            enabled: false,
+            label: 'label',
+            position: 'right',
+          }}
           navigation
           anchors={fullpages.map((page) => page.anchor)}
           sectionSelector={SECTION_SEL}
