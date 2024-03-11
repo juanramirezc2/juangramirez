@@ -559,7 +559,7 @@ function About() {
             </p>
             <a
               tw="mt-5 bg-bottom hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded inline-flex items-center no-underline"
-              href="mailto:me@juangabriel.dev"
+              href="mailto:jgramirezc2@gmail.com"
             >
               <FontAwesomeIcon tw="mr-2" icon="envelope" />
               Get in touch
