@@ -43,9 +43,19 @@ const social = [
     url: `https://github.com/juanramirezc2`,
   },
   {
+    platform: `twitch`,
+    icon: `twitch`,
+    url: `https://www.twitch.tv/juanramirezc2`,
+  },
+  {
+    platform: `youtube`,
+    icon: `youtube`,
+    url: `https://www.youtube.com/@juanramirezc`,
+  },
+  {
     platform: `twitter`,
     icon: `twitter`,
-    url: `https://twitter.com/juanramirezc2`,
+    url: `https://twitter.com/jgramirezc2`,
   },
   {
     platform: `codepen`,
@@ -71,11 +81,6 @@ const social = [
     platform: `npm`,
     icon: `npm`,
     url: `https://www.npmjs.com/~juangabriel`,
-  },
-  {
-    platform: `youtube`,
-    icon: `youtube`,
-    url: `https://www.youtube.com/channel/UCi0J3yA3m5CuyR8E-0SE23w`,
   },
 ]
 
